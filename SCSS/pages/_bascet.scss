@@ -1,0 +1,180 @@
+// * {
+//     padding: 0%;
+//     margin: 0%;
+//     box-sizing: border-box;
+
+//     ::selection {
+//         background: #000;
+//         color: #fff;
+//     }
+// }
+
+// header {
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding-top: 20px;
+//     padding-bottom: 20px;
+//     border-bottom: 2px solid #D8D8D8;
+
+
+//     .headerCountainer {
+//         display: flex;
+//         width: 80%;
+//         justify-content: space-between;
+//         align-items: center;
+
+//         .logo {
+
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+//             gap: 10px;
+
+//             h1 {
+//                 color: #FD5F00;
+//                 font-family: "Anton";
+//                 letter-spacing: 3px;
+//             }
+//         }
+
+//         .navHeader {
+//             display: flex;
+//             justify-content: space-between;
+
+
+//             ul {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 list-style: none;
+//                 gap: 15px;
+//                 font-size: 13PX;
+
+//                 .fa-bars {
+//                     display: none;
+//                 }
+
+//             }
+
+//             a {
+//                 text-decoration: none;
+//                 color: black;
+//                 font-weight: 500;
+//                 font-family: "Nunito Sans";
+//                 font-size: 16px;
+
+
+//             }
+
+//             .one {
+//                 color: #FE8200;
+//             }
+//         }
+
+//     }
+
+// }
+
+// @media screen and (min-width: 300px) and (max-width: 991px) {
+//     header {
+//         .headerCountainer {
+//             .navHeader {
+
+//                 ul {
+//                     li {
+//                         display: none;
+//                     }
+
+//                     .fa-bars {
+//                         display: block;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// #hero {
+
+//     min-height: 100vh;
+//     width: 100%;
+//     background-color: #ffedd9;
+//     background-size: cover;
+
+
+// }
+
+// @media screen and (min-width: 300px) and (max-width: 991px) {
+//     #hero {
+//         max-width: 100%;
+//     }
+// }
+
+// #product {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .productContainer {
+//         display: flex;
+//         gap: 20px;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         width: 75%;
+
+//         .cards {
+//             position: relative;
+//             padding: 35px;
+
+//             &:hover {
+//                 button {
+//                     display: block;
+//                 }
+//             }
+
+//             img {
+//                 max-width: 100%;
+//                 height: auto;
+//             }
+
+//             gap: 10px;
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             width: 25%;
+
+//             h3 {
+//                 font-family: "Anton";
+//                 font-weight: 500;
+//                 font-size: 24px;
+//                 color: rgb(253, 95, 0);
+//                 line-height: 29px;
+//             }
+
+//             h2 {
+//                 font-family: "Anton";
+//                 font-weight: 500;
+//                 font-size: 20px;
+//                 color: rgb(253, 95, 0);
+//                 line-height: 29px;
+//             }
+
+//             button {
+//                 display: none;
+//                 font-weight: 700;
+//                 font-size: 20px;
+//                 background-color: rgb(253, 95, 0);
+//                 line-height: 29px;
+//                 color: white;
+//                 width: 100%;
+//                 left: 1px;
+//                 position: absolute;
+//                 bottom: 1px;
+//                 border: none;
+//             }
+//         }
+//     }
+// }

@@ -1,0 +1,629 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+* ::selection {
+  background: #000;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #D8D8D8;
+}
+header .headerCountainer {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+header .headerCountainer .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+header .headerCountainer .logo h1 {
+  color: #FD5F00;
+  font-family: "Anton";
+  letter-spacing: 3px;
+}
+header .headerCountainer .navHeader {
+  display: flex;
+  justify-content: space-between;
+}
+header .headerCountainer .navHeader ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 15px;
+  font-size: 13PX;
+}
+header .headerCountainer .navHeader ul .fa-bars {
+  display: none;
+}
+header .headerCountainer .navHeader a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-family: "Nunito Sans";
+  font-size: 16px;
+}
+header .headerCountainer .navHeader .one {
+  color: #FE8200;
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  header .headerCountainer .navHeader ul li {
+    display: none;
+  }
+  header .headerCountainer .navHeader ul .fa-bars {
+    display: block;
+  }
+}
+#hero {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(../../assets/image/hero_12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 991px) {
+  #hero {
+    max-width: 100%;
+  }
+}
+#cart {
+  display: flex;
+  justify-content: center;
+}
+#cart .cartCountainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+#cart .cartCountainer .cartdesk {
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+}
+#cart .cartCountainer .cartdesk .border {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+#cart .cartCountainer .cartdesk .border h1 {
+  font-family: "Nunito Sans";
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 27px;
+}
+#cart .cartCountainer .cartdesk .border p {
+  font-family: "Nunito Sans";
+  color: rgb(147, 147, 147);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+}
+#cart .cartCountainer .colorone {
+  background-color: #4E4E4E;
+  border: 2px solid #A7A7A7;
+}
+#cart .cartCountainer .colortwo {
+  background-color: #FD5F00;
+  border: 2px solid #FEAF80;
+}
+#cart .cartCountainer .colorthere {
+  background-color: #A23131;
+  border: 2px solid #D19898;
+}
+#cart .cartCountainer .coloronee {
+  background-color: #4E4E4E;
+}
+#cart .cartCountainer .colortwoo {
+  background-color: #FD5F00;
+}
+#cart .cartCountainer .colortheree {
+  background-color: #A23131;
+}
+
+@media screen and (min-width: 300px) and (max-width: 781px) {
+  #cart .cartCountainer {
+    flex-wrap: wrap;
+  }
+}
+#aboutSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8em;
+  background-color: #CBA45A;
+}
+#aboutSec .countainerAboutSec {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+#aboutSec .countainerAboutSec .aboutVideo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#aboutSec .countainerAboutSec .aboutVideo .aboutText {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 95px;
+}
+#aboutSec .countainerAboutSec .aboutVideo .aboutText h2 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+}
+#aboutSec .countainerAboutSec .aboutVideo .aboutText p {
+  font-family: "Nunito";
+  font-weight: 400;
+  color: #000000;
+  font-size: 18px;
+  line-height: 27px;
+}
+#aboutSec .countainerAboutSec .aboutMember {
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+#aboutSec .countainerAboutSec .aboutMember div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#aboutSec .countainerAboutSec .aboutMember h3 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 64px;
+  color: rgb(253, 95, 0);
+  line-height: 64px;
+}
+#aboutSec .countainerAboutSec .aboutMember p {
+  font-family: "Nunito";
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 740px) {
+  #aboutSec {
+    padding: 10px;
+  }
+  #aboutSec .countainerAboutSec {
+    width: 300px;
+    height: auto;
+  }
+  #aboutSec .countainerAboutSec .aboutVideo {
+    flex-wrap: wrap;
+  }
+  #aboutSec .countainerAboutSec .aboutVideo iframe {
+    max-width: 100%;
+  }
+  #aboutSec .countainerAboutSec .aboutVideo .aboutText {
+    gap: 0px;
+    margin: 0%;
+    padding: 0%;
+  }
+  #aboutSec .countainerAboutSec .aboutMember {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 740px) and (max-width: 991px) {
+  #aboutSec {
+    padding: 10px;
+  }
+  #aboutSec .countainerAboutSec {
+    width: 750px;
+    height: auto;
+  }
+  #aboutSec .countainerAboutSec .aboutVideo {
+    flex-wrap: wrap;
+  }
+  #aboutSec .countainerAboutSec .aboutVideo iframe {
+    max-width: 100%;
+  }
+  #aboutSec .countainerAboutSec .aboutVideo .aboutText {
+    gap: 0px;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+#discoverSec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8em;
+}
+#discoverSec .discoverCountainer {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#discoverSec .discoverCountainer .discoverAboutText {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+  align-items: center;
+  flex-direction: column;
+}
+#discoverSec .discoverCountainer .discoverAboutText h2 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+#discoverSec .discoverCountainer .discoverAboutText p {
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+  font-size: 18px;
+  line-height: 26px;
+}
+#discoverSec .discoverCountainer .discoverBuild {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverImage {
+  width: 50%;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverImage img {
+  width: 100%;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText {
+  width: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 95px;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText h2 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText p {
+  font-family: "Nunito";
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+  font-size: 18px;
+  line-height: 26px;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText div div {
+  display: flex;
+  flex-direction: column;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText div div h3 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 64px;
+  color: rgb(253, 95, 0);
+  line-height: 64px;
+}
+#discoverSec .discoverCountainer .discoverBuild .discoverBuildText div div p {
+  font-family: "Nunito";
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+}
+#discoverSec .discoverCountainer .discoverFeeding {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#discoverSec .discoverCountainer .discoverImage {
+  width: 50%;
+}
+#discoverSec .discoverCountainer .discoverImage img {
+  width: 100%;
+}
+#discoverSec .discoverCountainer .Feedingyazi {
+  width: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 95px 0px 0px;
+}
+#discoverSec .discoverCountainer .Feedingyazi h2 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+}
+#discoverSec .discoverCountainer .Feedingyazi p {
+  font-family: "Nunito";
+  font-weight: 400;
+  color: rgb(147, 147, 147);
+  font-size: 18px;
+  line-height: 26px;
+}
+#discoverSec .discoverCountainer .Feedingyazi div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-around;
+}
+#discoverSec .discoverCountainer .Feedingyazi div div {
+  display: flex;
+  flex-direction: column;
+}
+#discoverSec .discoverCountainer .Feedingyazi div div h3 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 64px;
+  color: rgb(253, 95, 0);
+  line-height: 64px;
+}
+#discoverSec .discoverCountainer .Feedingyazi div div p {
+  font-family: "Nunito";
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  #discoverSec {
+    padding: 10px;
+  }
+  #discoverSec .discoverCountainer {
+    width: 500px;
+    height: auto;
+  }
+  #discoverSec .discoverCountainer .discoverAboutText {
+    width: 100%;
+  }
+  #discoverSec .discoverCountainer .discoverBuild {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    gap: 20px;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverImage img {
+    width: 300px;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverBuildText {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    gap: 0px;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverBuildText div {
+    flex-direction: column;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding {
+    width: 100%;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 0%;
+    gap: 20px;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .discoverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .discoverImage img {
+    width: 300px;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .Feedingyazi {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .Feedingyazi div {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 991px) {
+  #discoverSec {
+    padding: 10px;
+  }
+  #discoverSec .discoverCountainer {
+    width: 500px;
+    height: auto;
+  }
+  #discoverSec .discoverCountainer .discoverAboutText {
+    width: 100%;
+  }
+  #discoverSec .discoverCountainer .discoverBuild {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0%;
+    padding: 0%;
+    gap: 20px;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverImage img {
+    width: 700px;
+  }
+  #discoverSec .discoverCountainer .discoverBuild .discoverBuildText {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    gap: 0px;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding {
+    width: 100%;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    padding: 0%;
+    gap: 20px;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .discoverImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .discoverImage img {
+    width: 700px;
+  }
+  #discoverSec .discoverCountainer .discoverFeeding .Feedingyazi {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+  }
+}
+#MakeADonation {
+  display: flex;
+  padding: 7em;
+  justify-content: center;
+  align-items: center;
+  background-color: #CAA359;
+}
+#MakeADonation .countainerMakeADonation {
+  width: 25%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#MakeADonation .countainerMakeADonation h2 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  line-height: 38px;
+}
+#MakeADonation .countainerMakeADonation button {
+  padding: 18px;
+  font-family: "Nunito";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 16px;
+  background-color: #FD5F00;
+  transition: 0.5s;
+  border: none;
+}
+#MakeADonation .countainerMakeADonation button:hover {
+  background-color: #D75100;
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  #MakeADonation {
+    padding: 0%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #MakeADonation .countainerMakeADonation {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 991px) {
+  #MakeADonation {
+    padding: 0%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  #MakeADonation .countainerMakeADonation {
+    width: 700px;
+  }
+}
+#product {
+  display: flex;
+  padding: 8em;
+  justify-content: center;
+  align-items: center;
+}
+#product .productContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+#product .productContainer .cards {
+  position: relative;
+  padding: 35px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+#product .productContainer .cards:hover button {
+  display: block;
+}
+#product .productContainer .cards img {
+  max-width: 100%;
+  height: auto;
+}
+#product .productContainer .cards h3 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 24px;
+  color: rgb(253, 95, 0);
+  line-height: 29px;
+}
+#product .productContainer .cards h2 {
+  font-family: "Anton";
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(253, 95, 0);
+  line-height: 29px;
+}
+#product .productContainer .cards button {
+  display: none;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: rgb(253, 95, 0);
+  line-height: 29px;
+  color: white;
+  width: 100%;
+  left: 1px;
+  position: absolute;
+  bottom: 1px;
+  border: none;
+}
